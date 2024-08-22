@@ -33,7 +33,7 @@ import { SkeletonComponent } from "../skeleton";
 import { ConnectTips } from "../connectTips";
 import { toast } from "@/components/ui/use-toast";
 import { useRouter } from "next/navigation";
-import { Gem } from "lucide-react";
+import { Gem, ShoppingBasket } from "lucide-react";
 
 interface MarketListProps {
   price?: string;
@@ -133,7 +133,11 @@ export default function Page() {
     <div className="pt-40 container mx-auto">
       <div className="flex flex-row flex-wrap gap-4">
         {!marketList.length ? (
-          <div>There is nothing available at the moment</div>
+          <div className="text-6xl text-slate-500 drop-shadow-md">
+            <ShoppingBasket size={140} />
+            There is no order on the market
+            <div>at present</div>
+          </div>
         ) : (
           marketList.map((item) => (
             <Card key={item.orderNftId} className="max-w-[320px]">
