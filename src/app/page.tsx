@@ -27,7 +27,7 @@ export default function Home() {
       </div>
 
       <Image
-        className=" absolute right-0 z-0 w-[400px] h-auto"
+        className=" absolute right-[-120px] z-0 w-[800px] h-auto"
         src="/scene-surfing-scallop.svg"
         alt="Sui"
         priority={true}
