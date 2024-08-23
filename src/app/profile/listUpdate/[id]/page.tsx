@@ -111,7 +111,10 @@ export default function Page({ params }: { params: { id: string } }) {
             title: "Congratulations, Successful Operation",
             description: "You have successfully updated the price.",
           });
-          router.push("/market");
+
+          setTimeout(() => {
+            router.push("/market");
+          }, 1000);
         },
       }
     );

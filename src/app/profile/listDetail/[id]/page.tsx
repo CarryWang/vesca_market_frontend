@@ -106,7 +106,10 @@ export default function Page({ params }: { params: { id: string } }) {
             description:
               "your veSCA is listed, you can check it out in the marketplace.",
           });
-          router.push("/market");
+
+          setTimeout(() => {
+            router.push("/market");
+          }, 1000);
         },
       }
     );

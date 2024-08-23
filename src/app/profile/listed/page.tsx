@@ -119,7 +119,9 @@ export default function Page() {
             title: "Congratulations, Successful Operation",
             description: "You have successfully unlisted the veSCA.",
           });
-          router.push("/profile");
+          setTimeout(() => {
+            router.push("/profile");
+          }, 1000);
         },
       }
     );

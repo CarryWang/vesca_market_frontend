@@ -112,7 +112,9 @@ export default function Page() {
             description: "Make a successful purchase.",
           });
 
-          router.push("/profile");
+          setTimeout(() => {
+            router.push("/profile");
+          }, 1000);
         },
         onError: (err) => {
           console.log(err, "err========");
